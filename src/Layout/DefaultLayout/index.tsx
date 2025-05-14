@@ -1,13 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-
-// import { Container } from './styles';
+import SideNav from "../../common/SideNav";
+import styles from "./styles.module.scss";
 
 const DefaultLayout: React.FC = () => {
   return (
-    <div>
+    <main className={styles.main}>
+      <SideNav />
       <Outlet />
-    </div>
+    </main>
   );
 };
 
